@@ -144,6 +144,11 @@ ul {
   background-color: var(--main-background-color);
 }
 
+.hero > .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -152,18 +157,26 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 700px;
 }
 
 .hero-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: var(--accent-color);
+
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button:hover,
@@ -173,6 +186,11 @@ ul {
 
 /* ----------ABOUT-US---------- */
 
+.about-us > .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .about-us-slogans-title {
   font-weight: 700;
   font-size: 14px;
@@ -180,6 +198,17 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-title-color);
+
+  margin-bottom: 10px;
+}
+
+.about-us-slogans-list {
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.about-us-slogans-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .about-us-slogans-text {
@@ -187,6 +216,20 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+
+  width: 270px;
+}
+
+.about-us-title {
+  margin-bottom: 50px;
+}
+
+.about-us-gallery {
+  display: flex;
+}
+
+.about-us-photo:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* ----------OUR-TEAM---------- */
