@@ -4,6 +4,7 @@
   --main-text-color: #757575;
   --accent-color: #2196f3;
   --main-background-color: #2f303a;
+  --section-padding: 94px;
 }
 
 body {
@@ -25,6 +26,10 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+}
+
+img {
+  display: block;
 }
 
 .logo {
@@ -55,6 +60,8 @@ ul {
 }
 
 .btn {
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -177,6 +184,10 @@ ul {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 .hero-button:hover,
@@ -187,8 +198,8 @@ ul {
 /* ----------ABOUT-US---------- */
 
 .about-us > .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
 
 .about-us-slogans-title {
@@ -238,6 +249,34 @@ ul {
   background-color: #f5f4fa;
 }
 
+.our-team > .container {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.our-team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.our-team-item {
+  background-color: #ffffff;
+
+  flex-basis: calc(100% / 4 - 30px);
+  margin: 15px;
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+}
+
+.our-team-photo {
+  margin-bottom: 30px;
+}
+
+.our-team-title {
+  margin-bottom: 50px;
+}
+
 .our-team-name {
   font-weight: 500;
   font-size: 16px;
@@ -245,6 +284,8 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
+
+  margin-bottom: 10px;
 }
 
 .our-team-position {
@@ -258,12 +299,19 @@ ul {
 
 /* ----------FOOTER---------- */
 
+.footer > .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer {
   background-color: var(--main-background-color);
 }
 
 .footer-logo {
   color: #ffffff;
+
+  margin-bottom: 20px;
 }
 
 .footer-address {
@@ -273,6 +321,17 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+
+  display: block;
+  margin-bottom: 9px;
+}
+
+.footer-contacts-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-contacts-link {
+  font-style: normal;
 }
 
 .footer-contacts-link {
